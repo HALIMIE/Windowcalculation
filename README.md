@@ -1,13 +1,13 @@
 # Windowcalculation
 
-프로젝트 개요
+/프로젝트 개요
 목표: Windows 11 기본 계산기와 동일한 디자인 및 기본 사칙연산 기능을 C# / WPF / MVVM 패턴으로 구현
 
 패턴: MVVM (Model-View-ViewModel)
 
 언어 / 기술: C#, .NET Framework 4.8, WPF
 
-주요 포인트
+/주요 포인트
 
 WPF MVVM 구조 설계
 
@@ -26,20 +26,11 @@ Binding, DataContext
 최대 16자리 제한 처리
 
 프로젝트 구조
+<img width="354" height="263" alt="image" src="https://github.com/user-attachments/assets/48edea08-28f0-4240-9147-21b0338cd50c" />
 
-CalculatorMVVM
-├─ Model
-│  └─ Calculator.cs
-├─ View
-│  ├─ MainWindow.xaml
-│  └─ MainWindow.xaml.cs (partial class)
-├─ ViewModel
-│  └─ MainViewModel.cs
-├─ Command
-│  └─ RelayCommand.cs
-└─ App.xaml
 
-주요 기능
+
+/주요 기능
 *사칙연산 ( +, -, , / )
 
 키보드 입력 지원 (0~9, Backspace, Enter 등)
@@ -56,7 +47,7 @@ SubDisplay / MainDisplay 분리 출력
 
 0으로 나누기 예외 처리
 
-사용 기술 상세
+/사용 기술 상세
 WPF UniformGrid: 버튼 4x6 배치, 균일한 크기 유지
 
 TextBox + ViewBox 조합: 입력값 폰트 크기 자동 조정
@@ -71,7 +62,7 @@ Clipboard API: 복사 / 붙여넣기 구현
 
 String 기반 포맷 처리: double 사용 없이 쉼표(,) 수동 관리
 
-파일 설명
+/파일 설명
 
 Calculator.cs	계산 로직 처리 (Model)
 MainViewModel.cs	사용자 입력, 상태 관리 (ViewModel)
